@@ -1,0 +1,50 @@
+<!--HO4 - Crespo, Carl - S16-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArcherFind Dashboard</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container dashboard-container">
+        <h1 class="dashboard-title">
+            ArcherFind Dashboard
+        </h1>
+
+        <p class="dashboard-subtitle">
+            by Carl Crespo of S16 Team 6
+        </p>
+
+        <div class="row dashboard-row">
+            <div class="col-12 col-lg-4">
+                <div class="chart-card">
+                    <h5>Lost Item Categories</h5>
+                    <canvas id="categoryChart"></canvas>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4">
+                <div class="chart-card">
+                    <h5>Weekly Claimed Items</h5>
+                    <canvas id="claimedChart"></canvas>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4">
+                <div class="chart-card">
+                    <h5>Common Lost Locations</h5>
+                    <canvas id="locationChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="chart.js"></script>
+</body>
+</html>
